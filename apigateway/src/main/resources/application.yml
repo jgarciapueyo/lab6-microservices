@@ -1,0 +1,25 @@
+spring:
+  application:
+    name: apigateway
+
+# Application info
+info:
+  app:
+    name: Microservices Demo - API Gateway
+    description: This an API Gateway for Web and Registration
+    version: 2.0.0
+
+# HTTP Server
+server:
+  port: 5555
+
+# Discovery Server Access
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: ${EUREKA_URI:http://localhost:1111/eureka}
+    register-with-eureka: true
+    fetch-registry: true
+  instance:
+    prefer-ip-address: true
+
