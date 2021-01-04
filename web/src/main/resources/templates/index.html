@@ -24,11 +24,11 @@
             href="http://localhost:1111">http://localhost:1111</a></li>
     <li>Check applications registered: <a
             href="http://localhost:1111/eureka/apps/">http://localhost:1111/eureka/apps/</a></li>
-    <li>Fetch account #123456789: <a th:href="@{/accounts-service/accounts/123456789}">/accounts-service/accounts/123456789</a></li>
+    <li>Fetch account #123456789: <a th:href="@{/web-service/accounts/123456789}">/web-service/accounts/123456789</a></li>
 
-    <li>Fetch by name: <a th:href="@{/accounts-service/accounts/owner/Keri}">/accounts-service/accounts/owner/Keri</a></li>
+    <li>Fetch by name: <a th:href="@{/web-service/accounts/owner/Keri}">/web-service/accounts/owner/Keri</a></li>
 
-    <li>Account <a th:href="@{/accounts-service/accounts/search}">/accounts-service/Search</a></li>
+    <li>Account <a th:href="@{/web-service/accounts/search}">/web-service/Search</a></li>
 </ul>
 
 <div th:replace="footer :: copy"></div>
